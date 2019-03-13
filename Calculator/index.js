@@ -8,4 +8,20 @@ except "Equal, Delete, CLear"
 5- As long as there is no error just keep showing the result and keep calculating the result
 
 */
+var textfield = " ";
 
+function retunNumber(val) {
+    console.log(val);
+    if (textfield != " ") {
+        textfield = textfield + val;
+        document.getElementById('result').value = textfield;
+    } else if (textfield == " ") {
+        textfield = val;
+        document.getElementById('result').value = textfield;
+    }
+}
+
+document.getElementById('btn').addEventListener("click", function(){
+    document.getElementById('result').value= " ";
+    textfield = " ";
+});
