@@ -26,8 +26,8 @@ document.getElementById('clear').addEventListener("click", function(){
     textfield = " ";
 });
 
-document.getElementById('equal').addEventListener("click", function(){
-    // add all the numbers on an array of numbers with split tokens and add the tokens on another array (+,-,*,/) 
+
+// add all the numbers on an array of numbers with split tokens and add the tokens on another array (+,-,*,/) 
     // then loop over all the array and math the first two items of the array with the first tokesn on the tokesn array
     // then keep doint the math with the result with the next array item until you loop over all the array
     // in case there is unfamiliarity with the buttons fire try and catch with an error massage
@@ -40,10 +40,13 @@ document.getElementById('equal').addEventListener("click", function(){
     //how to loop over 2 array and use them togather
     //how to fire try and catch once need it
 
+
+document.getElementById('equal').addEventListener("click", function(){
     var numbers = [];
     var tokens = [];
 
-    while(0){
-        
+    for(var i=1; i<= textfield.trim().length; i++){
+        console.log(i);
     }
+    console.log(textfield);
 });
