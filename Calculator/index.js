@@ -46,7 +46,7 @@ document.getElementById('equal').addEventListener("click", function(){
     var tokens = [];
 
     for(var i=1; i<= textfield.trim().length; i++){
-        console.log(i);
+        if(textfield.split("+") == )
     }
     console.log(textfield);
 });
