@@ -40,13 +40,41 @@ document.getElementById('clear').addEventListener("click", function(){
     //how to loop over 2 array and use them togather
     //how to fire try and catch once need it
 
+function result(numbers, operations){
+
+    var currentResult = numbers[0];
+    for(var i =0; i<= operations.length ; i++){
+        if(operations[i] == '+'){
+            currentResult = currentResult + numbers[i+1];
+        }else if(operations[i] == '-'){
+            currentResult = currentResult - numbers[i+1];
+        }else if(operations[i] == '*'){
+            currentResult = currentResult * numbers[i+1];
+        }if(operations[i] == '/'){
+            currentResult = currentResult / numbers[i+1];
+        }else{
+            currentResult = "Wrong";
+        } 
+    }return currentResult;
+}
 
 document.getElementById('equal').addEventListener("click", function(){
-    var numbers = [];
-    var tokens = [];
 
-    for(var i=1; i<= textfield.trim().length; i++){
-        if(textfield.split("+") == )
-    }
+    var numbers = textfield.split(/\D/g);
+    var operations = textfield.split(/\d/g).filter(Boolean);
+    textfield = 33;
+    
+    /*
     console.log(textfield);
+    console.log(numbers);
+    console.log(operations);
+    */
+   if(Number.isInteger(result(numbers, operations)) == true){
+    textfield =result(numbers, operations);
+   }else{
+       textfield = "Invalid expression"
+   }
+    
+
+
 });
