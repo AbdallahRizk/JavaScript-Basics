@@ -1,0 +1,17 @@
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0.2em;
+    padding: 2em;
+}
+
+.firstColumen {
+    grid-column: 1;
+}
+
+.secondColumen {
+    grid-column: 2;
+}
