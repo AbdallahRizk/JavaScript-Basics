@@ -62,7 +62,6 @@ document.getElementById('equal').addEventListener("click", function(){
 
     var numbers = textfield.split(/\D/g);
     var operations = textfield.split(/\d/g).filter(Boolean);
-    textfield = 33;
     
     /*
     console.log(textfield);
