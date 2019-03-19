@@ -16,8 +16,8 @@ function retunNumber(val) {
 
 //this function to clear the textfield
 document.getElementById('clear').addEventListener("click", function () {
-    document.getElementById('result').value = " ";
     textfield = " ";
+    document.getElementById('result').value = textfield;
 });
 
 // This function to do the needed calculation 
@@ -60,3 +60,17 @@ if(isNaN(returnResult) == false){
 
 
 });
+
+//This function to delete the last char 
+document.getElementById('delete').addEventListener("click", function(){
+
+    //This to convert the result form number to string
+    var textfieldToString = textfield.toString();
+    //This one to delete the last char
+    var deleteLastChar= textfieldToString.substr(0, textfieldToString.length-1);
+    //This one to give textfield the last value
+    textfield = deleteLastChar;
+
+    document.getElementById('result').value= textfield;
+}); 
+
